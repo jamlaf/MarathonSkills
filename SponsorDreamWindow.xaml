@@ -1,0 +1,164 @@
+﻿<Window x:Class="MarathonSkills.Windows.SponsorDreamWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarathonSkills.Windows"
+        mc:Ignorable="d"
+        Title="SponsorDreamWindow" Height="700" Width="900"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="160*"/>
+            <RowDefinition Height="374*"/>
+            <RowDefinition Height="65*"/>
+        </Grid.RowDefinitions>
+
+        <Border
+            Grid.Row="0"
+            Background="#FF505050"
+        />
+
+        <WrapPanel Grid.Row="0"
+                   VerticalAlignment="Center"
+                   Margin="20,15,0,15" Height="40">
+
+            <Button 
+                x:Name="btnBackToMainWindow"
+                Width="100"
+                Height="40"
+                Content="Назад"
+                FontFamily="Arial"
+                FontSize="20"
+                Foreground="Black" 
+                Style="{DynamicResource DefoltButtonStyle}" 
+                BorderBrush="#FFB4B4B4"
+                Click="btnBackToMainWindow_Click"
+        />
+            <TextBlock
+            Text="MARATHON SKILLS 2021"
+            FontFamily="Arial"
+            FontSize="35" 
+            Foreground="White" 
+            FontWeight="Bold"
+            Margin="35 0 0 0"
+            />
+
+        </WrapPanel>
+
+        <StackPanel Grid.Row="1"
+                    HorizontalAlignment="Center"
+                    Margin="24,20,24,0" Width="844">
+            <TextBlock
+                Text="Спонсор бегуна"
+                FontFamily="Arial"
+                FontSize="30" 
+                Foreground="#FF505050" 
+                HorizontalAlignment="Center"
+            />
+
+            <TextBlock
+                Text="Пожалуйста, выберите бегуна, которого вы хотели бы спонсировать и сумму, которую вы бы хотели спонсировать. Спасибо за вашу поддержку бегунов и их благотворительных учреждений."
+                FontFamily="Arial"
+                TextWrapping="Wrap"
+                FontSize="23" 
+                Foreground="#FF505050" 
+                Height="85" 
+                TextAlignment="Center"
+                Margin="10"
+            />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2"
+                    HorizontalAlignment="Left"
+                    Margin="20 0 0 0">
+
+
+            <TextBlock
+                Text="Информация о спонсоре"
+                FontFamily="Arial"
+                TextWrapping="Wrap"
+                FontSize="25" 
+                FontWeight="Bold"
+                Foreground="#FFB4B4B4"
+                Margin="40 0 0 0"
+            />
+
+            <TextBlock
+                Text="Ваше имя:"
+                FontFamily="Arial"
+                TextWrapping="Wrap"
+                FontSize="23" 
+                Foreground="#FF505050" 
+                Margin="0 20 180 0"
+                HorizontalAlignment="Right"
+            />
+
+            <TextBlock
+                Text="Бегун:"
+                FontFamily="Arial"
+                TextWrapping="Wrap"
+                FontSize="23" 
+                Foreground="#FF505050" 
+                Margin="0 20 180 0"
+                HorizontalAlignment="Right"
+            />
+            
+            <TextBlock
+                Text="Карта:"
+                FontFamily="Arial"
+                TextWrapping="Wrap"
+                FontSize="23" 
+                Foreground="#FF505050" 
+                Margin="0 20 180 0"
+                HorizontalAlignment="Right"
+            />
+            
+            <TextBlock
+                Text="Номер карты #:"
+                FontFamily="Arial"
+                TextWrapping="Wrap"
+                FontSize="23" 
+                Foreground="#FF505050" 
+                Margin="0 20 180 0"
+                HorizontalAlignment="Right"
+            />
+            
+            <TextBlock
+                Text="Срок действия:"
+                FontFamily="Arial"
+                TextWrapping="Wrap"
+                FontSize="23" 
+                Foreground="#FF505050" 
+                Margin="0 20 180 0"
+                HorizontalAlignment="Right"
+            />
+            
+            <TextBlock
+                Text="CVC:"
+                FontFamily="Arial"
+                TextWrapping="Wrap"
+                FontSize="23" 
+                Foreground="#FF505050" 
+                Margin="0 20 180 0"
+                HorizontalAlignment="Right"
+            />
+        </StackPanel>
+
+        <Border
+            Grid.Row="3"
+            Background="#FF505050"
+        />
+
+        <TextBlock x:Name="tbDataTimer"
+                   Grid.Row="3"
+                   Text=""
+                   FontFamily="Arial"
+                   FontSize="25"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Foreground="White"
+        />
+    </Grid>
+</Window>
